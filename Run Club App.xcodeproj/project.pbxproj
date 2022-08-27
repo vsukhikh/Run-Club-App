@@ -16,6 +16,9 @@
 		891C9D6B28BA168B0064B921 /* PostSingleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891C9D6A28BA168B0064B921 /* PostSingleView.swift */; };
 		891C9D7028BA18970064B921 /* ProfilePostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891C9D6F28BA18970064B921 /* ProfilePostsView.swift */; };
 		891C9D7228BA1E180064B921 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891C9D7128BA1E180064B921 /* FeedView.swift */; };
+		891C9D7428BA28C90064B921 /* HealthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891C9D7328BA28C90064B921 /* HealthStore.swift */; };
+		891C9D7628BA29790064B921 /* HealthKitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891C9D7528BA29790064B921 /* HealthKitTest.swift */; };
+		891C9D7A28BA33640064B921 /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891C9D7928BA33640064B921 /* Step.swift */; };
 		899B3DDC28B75D9400342AA4 /* Run_Club_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899B3DDB28B75D9400342AA4 /* Run_Club_AppApp.swift */; };
 		899B3DDE28B75D9400342AA4 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899B3DDD28B75D9400342AA4 /* MainView.swift */; };
 		899B3DE028B75D9600342AA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 899B3DDF28B75D9600342AA4 /* Assets.xcassets */; };
@@ -60,6 +63,9 @@
 		891C9D6A28BA168B0064B921 /* PostSingleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostSingleView.swift; sourceTree = "<group>"; };
 		891C9D6F28BA18970064B921 /* ProfilePostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePostsView.swift; sourceTree = "<group>"; };
 		891C9D7128BA1E180064B921 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		891C9D7328BA28C90064B921 /* HealthStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthStore.swift; sourceTree = "<group>"; };
+		891C9D7528BA29790064B921 /* HealthKitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitTest.swift; sourceTree = "<group>"; };
+		891C9D7928BA33640064B921 /* Step.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
 		899B3DD828B75D9400342AA4 /* Run Club App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Run Club App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		899B3DDB28B75D9400342AA4 /* Run_Club_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Run_Club_AppApp.swift; sourceTree = "<group>"; };
 		899B3DDD28B75D9400342AA4 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -113,6 +119,24 @@
 			path = ImagePicker;
 			sourceTree = "<group>";
 		};
+		891C9D7728BA33490064B921 /* HealthKit */ = {
+			isa = PBXGroup;
+			children = (
+				891C9D7328BA28C90064B921 /* HealthStore.swift */,
+				891C9D7528BA29790064B921 /* HealthKitTest.swift */,
+				891C9D7828BA33520064B921 /* Model */,
+			);
+			path = HealthKit;
+			sourceTree = "<group>";
+		};
+		891C9D7828BA33520064B921 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				891C9D7928BA33640064B921 /* Step.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		899B3DCF28B75D9400342AA4 = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +171,7 @@
 				891C9D5A28B9DA6D0064B921 /* Profile.swift */,
 				899B3DDD28B75D9400342AA4 /* MainView.swift */,
 				891C9D7128BA1E180064B921 /* FeedView.swift */,
+				891C9D7728BA33490064B921 /* HealthKit */,
 				899B3E0528B75E4200342AA4 /* SignUpView.swift */,
 				899B3E0D28B9B0EF00342AA4 /* LogInView.swift */,
 				899B3E0B28B9A30900342AA4 /* CheckBoxStyle.swift */,
@@ -329,6 +354,9 @@
 				899B3E0E28B9B0EF00342AA4 /* LogInView.swift in Sources */,
 				891C9D6B28BA168B0064B921 /* PostSingleView.swift in Sources */,
 				891C9D7028BA18970064B921 /* ProfilePostsView.swift in Sources */,
+				891C9D7628BA29790064B921 /* HealthKitTest.swift in Sources */,
+				891C9D7A28BA33640064B921 /* Step.swift in Sources */,
+				891C9D7428BA28C90064B921 /* HealthStore.swift in Sources */,
 				891C9D6728BA09120064B921 /* ImagePickerView.swift in Sources */,
 				899B3DDE28B75D9400342AA4 /* MainView.swift in Sources */,
 				891C9D7228BA1E180064B921 /* FeedView.swift in Sources */,

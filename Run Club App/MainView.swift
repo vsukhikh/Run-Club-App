@@ -14,6 +14,11 @@ struct MainView: View {
                 .tabItem {
                     Label("Home", systemImage: "person")
                      }
+            
+            HealthKitTest()
+                .tabItem {
+                    Label("Health", systemImage: "figure.run")
+                }
 
             FeedView()
                 .tabItem {
