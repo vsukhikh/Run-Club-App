@@ -27,6 +27,10 @@ struct HealthKitTest: View {
             let step = Step(count: Int(count ?? 0), date: statistics.startDate)
             steps.append(step)
             
+            if (steps.count >= 8) {
+                steps.removeFirst()
+            }
+            
         
         }
     }
