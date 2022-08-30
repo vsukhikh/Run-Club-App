@@ -12,7 +12,7 @@ struct MainView: View {
         TabView {
             SignUpView()
                 .tabItem {
-                    Label("Home", systemImage: "person")
+                    Label("Home", systemImage: "house")
                      }
             
             HealthKitTest()

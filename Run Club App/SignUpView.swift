@@ -10,10 +10,11 @@ import SwiftUI
 struct SignUpView: View {
     @State private var nameComponents = PersonNameComponents()
     @State private var username: String = ""
-   // @FocusState private var emailFieldIsFocused: Bool = false
     @State private var password: String = ""
     @State private var showPassword = false
     @State private var agreeAds = false
+    
+    @FocusState private var focusedField: Field?
 
     
     var body: some View {
@@ -49,6 +50,12 @@ struct SignUpView: View {
                 )
                 .padding(.all)
                 .disableAutocorrection(true)
+                .textContentType(.name)
+                .submitLabel(.next)
+                .focused($focusedField, equals: .name)
+                .onSubmit {
+                    focusedField = .email
+                }
             }
             
             ZStack {
@@ -66,6 +73,14 @@ struct SignUpView: View {
                 )
                 .padding(.all)
                 .disableAutocorrection(true)
+                .autocapitalization(.none)
+                .textContentType(.emailAddress)
+                .submitLabel(.next)
+                .focused($focusedField, equals: .email)
+                .keyboardType(.emailAddress)
+                .onSubmit {
+                    focusedField = .password
+                }
             }
             
             ZStack {
@@ -82,11 +97,23 @@ struct SignUpView: View {
                         SecureField("Password", text: $password)
                             .disableAutocorrection(true)
                             .autocapitalization(.none)
+                            .textContentType(.newPassword)
+                            .submitLabel(.send)
+                            .focused($focusedField, equals: .password)
+                            .onSubmit {
+                                print("Submit!")
+                            }
                         }
                     else {
                         TextField("Password", text: $password)
                             .disableAutocorrection(true)
                             .autocapitalization(.none)
+                            .textContentType(.newPassword)
+                            .submitLabel(.send)
+                            .focused($focusedField, equals: .password)
+                            .onSubmit {
+                                print("Submit!")
+                            }
                     }
                     Button(action: {showPassword.toggle()}, label: {
                         Text(self.showPassword ? "Hide" : "Show")
@@ -116,6 +143,13 @@ struct SignUpView: View {
             }
         }
         .padding(.all)
+    }
+    
+    
+    enum Field {
+        case name
+        case email
+        case password
     }
 }
 
