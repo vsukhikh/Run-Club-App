@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-//We can't remove extra spaces from NavigationView even if it's hidden, so I created the new view to manage it without NavigationView at all
+//We can't remove extra spaces from NavigationView even if it's hidden, so I created the new view to manage it without NavigationView at all.
 
 struct ManageLogInAndSignUpView: View {
     @State var LogInClicked = false
