@@ -3,7 +3,7 @@
 //  Run Club App
 //
 //  Created by Vladimir Sukhikh on 2022-08-25.
-
+//
 
 import SwiftUI
 
