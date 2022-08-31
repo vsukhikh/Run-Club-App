@@ -16,6 +16,7 @@ struct SignUpView: View {
     
     @FocusState private var focusedField: Field?
 
+    @Binding var LogInClicked: Bool
     
     var body: some View {
         VStack (alignment: .leading) {
@@ -26,7 +27,8 @@ struct SignUpView: View {
                     
                     
                 Spacer()
-                Button(action: {print("Log In")}) { //TODO
+               
+                Button(action: {LogInClicked = true}) {
                     Text("Log In")
                         .font(.title3)
                         .fontWeight(.medium)
@@ -143,6 +145,7 @@ struct SignUpView: View {
             }
         }
         .padding(.all)
+        
     }
     
     
@@ -156,8 +159,8 @@ struct SignUpView: View {
 
 
 
-struct SignUpView_Previews: PreviewProvider {
-    static var previews: some View {
-        SignUpView()
-    }
-}
+//struct SignUpView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        SignUpView()
+//    }
+//}

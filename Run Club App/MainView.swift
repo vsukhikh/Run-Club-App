@@ -10,7 +10,7 @@ import SwiftUI
 struct MainView: View {
     var body: some View {
         TabView {
-            SignUpView()
+            ManageLogInAndSignUpView()
                 .tabItem {
                     Label("Home", systemImage: "house")
                      }
@@ -30,6 +30,7 @@ struct MainView: View {
                     Label("Profile", systemImage: "person")
                 }
         }
+        .accentColor(.GreenPrimary)
     }
 }
 

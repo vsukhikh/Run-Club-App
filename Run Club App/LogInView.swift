@@ -12,16 +12,18 @@ struct LogInView: View {
     @State private var password: String = ""
     @State private var showPassword = false
     
+    @Binding var LogInClicked: Bool
+    
     var body: some View {
         VStack (alignment: .leading) {
             HStack(alignment: .firstTextBaseline) {
                 Text("Log In")
                     .font(.largeTitle)
                     .fontWeight(.semibold)
-                    
-                    
+                
                 Spacer()
-                Button(action: {print("Sign Up")}) { //TODO
+                
+                Button(action: {LogInClicked = false}) {
                     Text("Sign Up")
                         .font(.title3)
                         .fontWeight(.medium)
@@ -98,11 +100,12 @@ struct LogInView: View {
             }
         }
         .padding(.all)
+
     }
 }
 
-struct LogInView_Previews: PreviewProvider {
-    static var previews: some View {
-        LogInView()
-    }
-}
+//struct LogInView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        LogInView()
+//    }
+//}

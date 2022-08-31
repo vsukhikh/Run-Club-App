@@ -32,6 +32,7 @@
 		899B3E0C28B9A30900342AA4 /* CheckBoxStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899B3E0B28B9A30900342AA4 /* CheckBoxStyle.swift */; };
 		899B3E0E28B9B0EF00342AA4 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899B3E0D28B9B0EF00342AA4 /* LogInView.swift */; };
 		899B3E2028B9CA9B00342AA4 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 899B3E1128B9BC0000342AA4 /* HealthKit.framework */; };
+		89ADB22F28BDECCD00395672 /* ManageLogInAndSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89ADB22E28BDECCD00395672 /* ManageLogInAndSignUpView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		899B3E0B28B9A30900342AA4 /* CheckBoxStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxStyle.swift; sourceTree = "<group>"; };
 		899B3E0D28B9B0EF00342AA4 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 		899B3E1128B9BC0000342AA4 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		89ADB22E28BDECCD00395672 /* ManageLogInAndSignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageLogInAndSignUpView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +176,7 @@
 				891C9D7728BA33490064B921 /* HealthKit */,
 				899B3E0528B75E4200342AA4 /* SignUpView.swift */,
 				899B3E0D28B9B0EF00342AA4 /* LogInView.swift */,
+				89ADB22E28BDECCD00395672 /* ManageLogInAndSignUpView.swift */,
 				899B3E0B28B9A30900342AA4 /* CheckBoxStyle.swift */,
 				899B3E0928B76D7B00342AA4 /* Configurations.swift */,
 				899B3E0728B768D300342AA4 /* CustomColor.swift */,
@@ -355,6 +358,7 @@
 				891C9D6B28BA168B0064B921 /* PostSingleView.swift in Sources */,
 				891C9D7028BA18970064B921 /* ProfilePostsView.swift in Sources */,
 				891C9D7628BA29790064B921 /* HealthKitTest.swift in Sources */,
+				89ADB22F28BDECCD00395672 /* ManageLogInAndSignUpView.swift in Sources */,
 				891C9D7A28BA33640064B921 /* Step.swift in Sources */,
 				891C9D7428BA28C90064B921 /* HealthStore.swift in Sources */,
 				891C9D6728BA09120064B921 /* ImagePickerView.swift in Sources */,
