@@ -1,1 +1,3 @@
-# Run-Club-App
+# Run Club App
+
+Using SwiftUI and HealthKit
