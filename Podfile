@@ -6,6 +6,7 @@ target 'Run Club App' do
   use_frameworks!
 
   # Pods for Run Club App
+  pod 'FirebaseAuth', '~> 9.5.0'
 
   target 'Run Club AppTests' do
     inherit! :search_paths

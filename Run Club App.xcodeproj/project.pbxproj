@@ -33,6 +33,7 @@
 		899B3E0E28B9B0EF00342AA4 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899B3E0D28B9B0EF00342AA4 /* LogInView.swift */; };
 		899B3E2028B9CA9B00342AA4 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 899B3E1128B9BC0000342AA4 /* HealthKit.framework */; };
 		89ADB22F28BDECCD00395672 /* ManageLogInAndSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89ADB22E28BDECCD00395672 /* ManageLogInAndSignUpView.swift */; };
+		89B91C4628C967AF008FC704 /* SignInUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B91C4528C967AF008FC704 /* SignInUpViewModel.swift */; };
 		96F491682DD63993CBAD8F9E /* Pods_Run_Club_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E516C97774B9F044073D145 /* Pods_Run_Club_AppTests.framework */; };
 		C89F59FD58D354C3BFDEAB19 /* Pods_Run_Club_App_Run_Club_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A8D55DEB308EAD9421E3F28 /* Pods_Run_Club_App_Run_Club_AppUITests.framework */; };
 		EAB4380BCDDB43DF856C5F05 /* Pods_Run_Club_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58679800480E69169896087C /* Pods_Run_Club_App.framework */; };
@@ -96,6 +97,7 @@
 		899B3E0D28B9B0EF00342AA4 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 		899B3E1128B9BC0000342AA4 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		89ADB22E28BDECCD00395672 /* ManageLogInAndSignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageLogInAndSignUpView.swift; sourceTree = "<group>"; };
+		89B91C4528C967AF008FC704 /* SignInUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInUpViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +195,7 @@
 				899B3E0528B75E4200342AA4 /* SignUpView.swift */,
 				899B3E0D28B9B0EF00342AA4 /* LogInView.swift */,
 				89ADB22E28BDECCD00395672 /* ManageLogInAndSignUpView.swift */,
+				89B91C4528C967AF008FC704 /* SignInUpViewModel.swift */,
 				899B3E0B28B9A30900342AA4 /* CheckBoxStyle.swift */,
 				899B3E0928B76D7B00342AA4 /* Configurations.swift */,
 				899B3E0728B768D300342AA4 /* CustomColor.swift */,
@@ -250,7 +253,6 @@
 				6721527BEF4FBA1B959B2102 /* Pods-Run Club AppTests.debug.xcconfig */,
 				32225C8E9CEC2FFE3D1E5991 /* Pods-Run Club AppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -265,6 +267,7 @@
 				899B3DD428B75D9400342AA4 /* Sources */,
 				899B3DD528B75D9400342AA4 /* Frameworks */,
 				899B3DD628B75D9400342AA4 /* Resources */,
+				4D410706A3C36A3715066F0D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -302,6 +305,7 @@
 				899B3DEE28B75D9600342AA4 /* Sources */,
 				899B3DEF28B75D9600342AA4 /* Frameworks */,
 				899B3DF028B75D9600342AA4 /* Resources */,
+				9C035CCC8881D33F0A601402 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -427,6 +431,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		4D410706A3C36A3715066F0D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Run Club App/Pods-Run Club App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Run Club App/Pods-Run Club App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Run Club App/Pods-Run Club App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		6D965B26D6D8F3656ACB1313 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -449,6 +470,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		9C035CCC8881D33F0A601402 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Run Club App-Run Club AppUITests/Pods-Run Club App-Run Club AppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Run Club App-Run Club AppUITests/Pods-Run Club App-Run Club AppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Run Club App-Run Club AppUITests/Pods-Run Club App-Run Club AppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -462,6 +500,7 @@
 				899B3E0E28B9B0EF00342AA4 /* LogInView.swift in Sources */,
 				891C9D6B28BA168B0064B921 /* PostSingleView.swift in Sources */,
 				891C9D7028BA18970064B921 /* ProfilePostsView.swift in Sources */,
+				89B91C4628C967AF008FC704 /* SignInUpViewModel.swift in Sources */,
 				891C9D7628BA29790064B921 /* HealthKitTest.swift in Sources */,
 				89ADB22F28BDECCD00395672 /* ManageLogInAndSignUpView.swift in Sources */,
 				891C9D7A28BA33640064B921 /* Step.swift in Sources */,
