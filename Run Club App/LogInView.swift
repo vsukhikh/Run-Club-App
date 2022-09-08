@@ -14,6 +14,8 @@ struct LogInView: View {
     
     @Binding var LogInClicked: Bool
     
+    @EnvironmentObject var AuthViewModel: AuthenticationViewModel
+
     var body: some View {
         VStack (alignment: .leading) {
             HStack(alignment: .firstTextBaseline) {
@@ -46,6 +48,7 @@ struct LogInView: View {
                 )
                 .padding(.all)
                 .disableAutocorrection(true)
+                .autocapitalization(.none)
             }
             
             ZStack {
@@ -78,7 +81,9 @@ struct LogInView: View {
             }
             
             VStack {
-                Button(action: ({print("Log In Successful!")})) { //TODO
+                Button(action: {
+                    AuthViewModel.login(email: username, password: password)
+                }) {
                     ZStack {
                         RoundedRectangle(cornerRadius: 100)
                             .frame(height: 50)
@@ -100,7 +105,6 @@ struct LogInView: View {
             }
         }
         .padding(.all)
-
     }
 }
 

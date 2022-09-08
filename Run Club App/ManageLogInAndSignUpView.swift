@@ -11,12 +11,15 @@ import SwiftUI
 
 struct ManageLogInAndSignUpView: View {
     @State var LogInClicked = false
+    @StateObject var AuthViewModel = AuthenticationViewModel()
     
     var body: some View {
         if LogInClicked {
             LogInView(LogInClicked: $LogInClicked)
+                .environmentObject(AuthViewModel)
         } else {
             SignUpView(LogInClicked: $LogInClicked)
+                .environmentObject(AuthViewModel)
         }
     }
 }

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SignUpView: View {
-    @State private var nameComponents = PersonNameComponents()
+    @State private var nameComponents: String = ""
     @State private var username: String = ""
     @State private var password: String = ""
     @State private var showPassword = false
@@ -17,6 +17,8 @@ struct SignUpView: View {
     @FocusState private var focusedField: Field?
 
     @Binding var LogInClicked: Bool
+    
+    @EnvironmentObject var AuthViewModel: AuthenticationViewModel
     
     var body: some View {
         VStack (alignment: .leading) {
@@ -47,8 +49,7 @@ struct SignUpView: View {
                     
                 TextField (
                         "John Smith",
-                        value: $nameComponents,
-                        format: .name(style: .medium)
+                        text: $nameComponents
                 )
                 .padding(.all)
                 .disableAutocorrection(true)
@@ -131,7 +132,9 @@ struct SignUpView: View {
             }
             .toggleStyle(CheckBoxStyle())
             
-            Button(action: ({print("Sign Up Successful!")})) { //TODO
+            Button(action: {
+                AuthViewModel.signup(name: nameComponents, email: username, password: password)
+            }) { 
                 ZStack {
                     RoundedRectangle(cornerRadius: 100)
                         .frame(height: 50)
